@@ -32,7 +32,6 @@ export const verifyToken = (req: Request, res: Response, next: NextFunction) => 
     } catch (error: any) {
         
         if (error.name === 'TokenExpiredError') {
-            console.log("⚠️ Token süresi doldu, 401 dönülüyor...");
             return res.status(401).json({ message: 'Token expired' });
         }
 
