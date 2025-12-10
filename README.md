@@ -36,7 +36,6 @@ A real-time chat application backend built with Node.js, Express, TypeScript, Mo
     ```env
     JWT_SECRET_ACCESS=your_access_token_secret
     JWT_SECRET_REFRESH=your_refresh_token_secret
-    REFRESH_SECRET=your_refresh_token_secret # Should match or be separate depending on rotation policy
     ```
     *Note: MongoDB URI is currently hardcoded in `src/db.ts` as `mongodb://localhost:27017/chat-app-db`. Update it there if needed.*
 
